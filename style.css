@@ -1,0 +1,288 @@
+:root{
+    --primary-color: #fec700;
+    --secondary-color: #333;
+    --heading-color: #333;
+    --text-color: #5555555;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fixed-top{
+   position: fixed;
+   top: 0; 
+   left:0;
+   z-index: 999;
+   background: #333;
+}
+
+ul,li{
+    padding: 0;
+    margin: 0;
+}
+ /* Hero Section */
+.hero_section{
+  background-image: url(./img/hero.png); 
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  padding: 200px 0;
+
+  .section_heading{
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    font-style: italic;
+  }
+  .section_subheading{
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 10px;
+  }
+  .btn-custom {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 14px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+}
+
+/* Service Section */
+.service_section{
+    padding: 100px 0px;
+
+    .section_heading{
+        font-size: 50px;
+        font-weight: 700;
+        color: var(--heading-color);
+        margin-top: 10px;
+      }
+    .section_subheading{
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--text-color);
+        margin-top: 10px;
+        padding: 0 300px;
+
+    }
+     .service_box{
+        .service_icon{
+            background-color: var(--primary-color);
+            padding: 20px;
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+            border-radius: 50%;
+            font-size: 300%;
+            color: #fff;
+    
+        }
+        h2{
+            font-size: 26px;
+            font-weight: 700;
+            margin-top: 6px;
+        }
+        p{
+            font-size: 16px;
+            color: var(--text-color);
+            margin: 10px;
+        }
+
+     }
+    
+}
+
+/* portfolio section */
+.portfolio_section{
+    background-color: #eae9e999;
+    padding: 100px 0px;
+
+    .section_heading{
+        font-size: 50px;
+        font-weight: 700;
+        color: var(--heading-color);
+        margin-top: 10px;
+      }
+    .section_subheading{
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--text-color);
+        margin-top: 10px;
+        padding: 0 300px;
+
+    }
+    .portfolio_item{
+        background-color:#fff ;
+        border-radius: 10px;
+        overflow: hidden;    
+
+    .portfolio_content{
+        padding: 30px 20px;
+        h2{
+            font-size: 26px;
+            font-weight: 700;
+            margin-top: 15px;
+        }
+        p{
+          font-size: 16px;
+          color: var(--text-color);
+          margin-top: 10px;  
+        }
+        a{
+            background-color: var(--primary-color);
+            color: #000;
+            padding: 14px 40px;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top:20px ;
+            text-decoration: none;
+            border-radius: 6px ;
+            margin-top: 8px;
+            display: inline-block;
+            transition: all 0.2s linear;
+           &:hover{
+            background-color: var(--secondary-color);
+            color: #fff;
+           }
+
+        }
+    }
+  }
+}
+/* about */
+.about_section{
+    padding: 100px 0;
+
+    .section_heading{
+        font-size: 50px;
+        font-weight: 700;
+        color: var(--heading-color);
+        margin-top: 10px;
+      }
+    .section_subheading{
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--text-color);
+        margin-top: 10px;
+        padding: 0 300px;
+    }
+    .about_content{
+        h2{
+            font-size: 26px;
+            font-weight: 700;
+            margin-top: 15px;
+        }
+        p{
+          font-size: 16px;
+          color: var(--text-color);
+          margin-top: 10px;  
+        }
+        ul{
+            list-style: none;
+            margin-top: 20px;
+            display: grid;
+            gap: 10px;
+            padding-left: 20px;
+            li{
+                display: flex;
+                gap: 6px;
+                align-items: center;
+                .about_icon{
+                    i{
+                        color: var(--primary-color);
+                        font-size: 24px;
+                    }
+                    
+                }
+                
+            }
+        }
+    }
+}
+/* team */
+.team_section{
+    background-color: #eae9e999;
+    padding: 100px 0px;
+
+    .section_heading{
+        font-size: 50px;
+        font-weight: 700;
+        color: var(--heading-color);
+        margin-top: 10px;
+      }
+    .section_subheading{
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--text-color);
+        margin-top: 10px;
+        padding: 0 300px;
+
+    }
+    .team_member{
+        .team_img{
+            width: 270px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 14px solid #000;
+        }
+        h2{
+            font-size: 26px;
+            font-weight: 700;
+            margin-top: 15px; 
+        }
+        p{
+            font-size: 16px;
+            color: var(--text-color);
+            margin-top: 10px;    
+        }
+        .team_social{
+            display: flex;
+            gap: 22px;
+            justify-content: center;
+            a{
+                width: 40px;
+                height: 40px;
+                background:var(--primary-color);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                font-size: 20px;
+                color: #000;
+                transition: all 0.2s linear;
+                &:hover{
+                  background: var(--secondary-color);
+                  color: #fff;
+                }
+            }
+        }
+    }
+}
+
+/* footer */
+footer{
+    padding: 20px 0;
+    background: var(--secondary-color);
+    h3{
+        font-size: 26px;
+        font-weight: 700;
+        color: #fff; 
+    }
+    p{
+            font-size: 16px;
+            color: #fff; 
+            margin-top: 10px; 
+    }
+}
+@media (max-width: 768){
+    .section_subheading{
+        padding: 0 20px !important;
+    }
+}
